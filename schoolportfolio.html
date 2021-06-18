@@ -1,0 +1,243 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>School portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/secondary.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section class="two">
+						<div class="container">
+                        <h4 style="text-align:left"><a href="index.html">&lt; Home</a></h4>
+                        <h4 style="text-align:left"><a href="#more">More</a></h4>
+
+							<header>
+								<h2>School Portfolio</h2>
+							</header>
+							
+							<p>A gallery of college projects.</p>
+						
+						</div>
+					</section>
+
+				<!-- Example 1 -->
+					<section class="two">
+                        <div class="container">
+
+                            <header>
+                                <h2>Master's Scholarly Product (2020)</h2>
+                            </header>
+
+                            <embed src="Slobotsky2020.pdf" type="application/pdf" width="75%" height="600px" />
+                            <br>
+                            <a href="slobotsky2020.zip">Download zip file [5.2 MB]</a>
+
+                            <p style="text-align:left">My work, "Estimating Commercial and Residential Food Waste Generation at County Scale," is the first paper
+                            to model food waste generation at the county level for the entire United States. To use the data product, click the download link above; I 
+                            recommend reading the paper first to gain a better understanding. Please note the readme.txt file, and please attribute proper 
+                            credit with use. If you are working with this data, I'd love to hear about it via email! </p>
+
+                        </div>
+					</section>
+
+                <!-- Example 2 -->
+					<section class="three">
+						<div class="container">
+
+                            <header>
+                                <h2>Graduate level Python course final (2019)</h2>
+                            </header>
+
+                            <embed src="GEOG788P Report.pdf" type="application/pdf" width="75%" height="600px" />
+
+                            <p style="text-align:left">My final project for an advanced spatial data science Python course (GEOG788P) highlighted data visualization and spatial 
+                                statistics capabilities of the pandas, geopandas, cenpy, pysal, plotly, and folium modules. For more, see 
+                                <a href="https://github.com/slobotsky/brianslobotsky_MnM4SDS_project">the project's GitHub repository.</a> </p>
+
+                        </div>
+					</section>
+
+				<!-- Example 3 -->
+                    <section class="four">
+                        <div class="container">
+
+                            <header>
+                                <h2>R course assignment (2019)</h2>
+                            </header>
+
+                            <a class="image centered"><img src="images/sp_r.png" alt="" style="width:672px;height:480px;"/></a>
+
+                            <p style="text-align:left">A map created with ggplot in R. This work is from the graduate level course GEOG606, 
+                            Quantitative Spatial Analysis, where I learned multivariate statistical methods and R coding to solve spatial problems.</p>
+
+                        </div>
+                    </section>		
+
+                <!-- Example 4 -->
+                    <section class="two">
+                        <div class="container">
+
+                            <header>
+                                <h2> GEOG473 maps (2019)</h2>
+                            </header>
+
+                            <style>
+                            /* The grid: Four equal columns that floats next to each other */
+                            .column {
+                            float: left;
+                            width: 25%;
+                            padding: 10px;
+                            }
+
+                            /* Style the images inside the grid */
+                            .column img {
+                            opacity: 0.8; 
+                            cursor: pointer; 
+                            }
+
+                            .column img:hover {
+                            opacity: 1;
+                            }
+
+                            /* Clear floats after the columns */
+                            .row:after {
+                            content: "";
+                            display: table;
+                            clear: both;
+                            }
+
+                            /* Closable button inside the expanded image */
+                            .closebtn {
+                            position: relative;
+                            font-size: 20px;
+                            cursor: pointer;
+                            }
+                            </style>
+                            
+                            <div style="text-align:center">
+                            <p>Click on an image below for a larger version:</p>
+                            </div>
+
+                            <!-- The four columns -->
+                            <div class="row">
+                            <div class="column">
+                                <img src="images/sp_gal1.png" alt="" style="width:100%" onclick="myFunction(this);">
+                            </div>
+                            <div class="column">
+                                <img src="images/sp_gal2.png" alt="" style="width:100%" onclick="myFunction(this);">
+                            </div>
+                            <div class="column">
+                                <img src="images/sp_gal3.png" alt="" style="width:100%" onclick="myFunction(this);">
+                            </div>
+                            <div class="column">
+                                <img src="images/sp_gal4.png" alt="" style="width:100%" onclick="myFunction(this);">
+                            </div>
+                            </div>
+
+                            <div>
+                            <img id="expandedImg" style="width:60%">
+                            <span onclick="this.parentElement.style.display='none'" class="closebtn">(close)</span>
+                            <div id="imgtext"></div>
+                            </div>
+
+                            <script>
+                            function myFunction(imgs) {
+                                var expandImg = document.getElementById("expandedImg");
+                                var imgText = document.getElementById("imgtext");
+                                expandImg.src = imgs.src;
+                                imgText.innerHTML = imgs.alt;
+                                expandImg.parentElement.style.display = "block";
+                            }
+                            </script>
+
+                            <p style="text-align:left"> A few thematic maps from GEOG473, Geographic Information Systems and Spatial Analysis, a course 
+                                designed to provide students practical experience with various aspects of GIS professional work. Each map above highlights a different 
+                                scenario that a GIS analyst might encounter, such as routing an accident to the nearest hospital using Network Analyst (second image) 
+                                and a site suitability analysis (fourth image). </p>
+
+                        </div>
+                    </section>
+                            
+
+                <!-- Example 5 -->
+                    <section class="three">
+                        <div class="container">
+
+                            <header>
+                                <h2>Leaflet assignment for a cartography course (2018)</h2>
+                            </header>
+
+                            <a class="image centered"><img src="images/sp_leaflet.png" alt="" style="width:800px;height:500px;"/></a>
+
+                            <p style="text-align:left">Assignment for GEOG475, Computer Cartography. This screenshot is all I can share because the HTML code was 
+                                unfortunately saved in a location that I can no longer access. The course focused on understanding standard cartographic 
+                                practices, creating effective thematic maps, and experimenting with interactive, animated, three-dimensional displays. It was one of my favorite courses!</p> 
+
+                        </div>
+                    </section>
+
+                <!-- Links -->
+                <section id="more" class="two">
+                    <div class="container">
+
+                        <header>
+                            <h2>Explore more:</h2>
+                        </header>
+
+                        <div class="row">
+                            <div class="col-4 col-4-mobile">
+                                <article class="item">
+                                    <a href="index.html" class="image fit"><img src="images/av_home.jpg" alt="" /></a>
+                                    <header>
+                                        <h3>Home</h3>
+                                    </header>
+                                </article>
+                            </div>
+                            <div class="col-4 col-4-mobile">
+                                <article class="item">
+                                    <a href="workportfolio.html" class="image fit"><img src="images/av_work.jpg" alt="" /></a>
+                                    <header>
+                                        <h3>Work project portfolio</h3>
+                                    </header>
+                                </article>
+                            </div>
+                            <div class="col-4 col-4-mobile">
+                                <article class="item">
+                                    <a href="personalportfolio.html" class="image fit"><img src="images/av_personal.jpg" alt="" /></a>
+                                    <header>
+                                        <h3>Personal project portfolio</h3>
+                                    </header>
+                                </article>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>               
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->			
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Personal portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/secondary.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section class="two">
+						<div class="container">
+                        <h4 style="text-align:left"><a href="index.html"> &lt; Home</a></h4>
+                        <h4 style="text-align:left"><a href="#more">More</a></h4>
+
+							<header>
+								<h2>Personal Portfolio</h2>
+							</header>
+							
+							<p>Some GIS explorations from my spare time.</p>
+						
+						</div>
+					</section>
+
+				<!-- Example 1 -->
+					<section class="two">
+                        <div class="container">
+
+                            <header>
+                                <h2>Road Names of New Jersey (2021)</h2>
+                            </header>
+
+                            <a class="image centered"><img src="images/pp_roadnames.png" alt="" style="width:960px;height:1200px;"/></a>
+
+                            <p style="text-align:left"> This toponym-based visualization was inspired by the numerous Ocean Avenues and Main Streets along the Jersey Shore. After 
+                                downloading the road network, I used SQL wildcard operators to find all matches containing the desired road names. For example, "Mullica River Road" "Riverside Place" and "River Street" 
+                                are all valid "River" locations. Visually, I decided to adopt a minimalist design, using image editing software to arrange the six maps in one display.  
+                                </p>
+
+                        </div>
+					</section>
+
+                <!-- Example 2 -->
+					<section class="three">
+						<div class="container">
+
+                            <header>
+                                <h2>Construction of homes in Monmouth County, NJ (2018)</h2>
+                            </header>
+
+                            <a class="image centered"><img src="images/pp_yrbuilt.gif" alt="" style="width:960px;height:540px;"/></a>
+
+                            <p style="text-align:left"> I downloaded a shapefile with all land parcels of Monmouth County which included a column for the year that each detached home 
+                                was built. I created this animation utilizing the time functionality of ArcMap. Additionally, I used a color ramp with the data to show greater contrast. 
+                                It should be noted that this animation only applies to homes that were still in existence in 2017 and does not include older homes that were demolished prior to 2017. </p>
+
+                        </div>
+					</section>
+
+				<!-- Example 3 -->
+                    <section class="four">
+                        <div class="container">
+
+                            <header>
+                                <h2>Election Day 2017 ArcGIS Online Webmap (2017)</h2>
+                            </header>
+
+                            <style>
+                            .embed-container {
+                                position: relative; 
+                                padding-bottom: 80%; 
+                                height: 0; 
+                                max-width: 100%;
+                            } 
+                            
+                            .embed-container iframe, .embed-container object, .embed-container iframe {
+                                position: absolute; 
+                                top: 0; left: 0; 
+                                width: 100%; height: 100%;
+                            } 
+                            
+                            small{
+                                position: absolute; 
+                                z-index: 40; 
+                                bottom: 0; 
+                                margin-bottom: -15px;
+                                }
+                            </style>
+                            
+                            <div class="embed-container">
+                                <iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Election Day 2017" src="//www.arcgis.com/apps/Embed/index.html?webmap=37324a7ec5a64eb7bb540795bc6ab51e&extent=-128.9346,22.3292,-64.0274,51.3302&zoom=true&previewImage=false&scale=true&details=true&legendlayers=true&active_panel=details&basemap_gallery=true&disable_scroll=true&theme=light"></iframe>
+                            </div>
+
+                            <p style="text-align:left">A quick interactive ArcGIS Online map I made in November 2017 to spread awareness for state and federal legislative elections. </p>
+
+                        </div>
+                    </section>			
+                    
+            	<!-- Example 4 -->
+					<section class="two">
+                        <div class="container">
+
+                            <header>
+                                <h2> Monmouth County, NJ, parcel data visualization (2017)</h2>
+                            </header>
+                            
+                            <style>
+                                .row {
+                                  display: flex;
+                                }
+                                .column {
+                                  flex: 50%;
+                                  padding: 5px;
+                                }
+                            </style>
+                            
+                            <div class="row">
+                                <div class="column">
+                                    <img src="images/pp_parcel1.png" alt="" style="width:100%"/>
+                                </div>
+                                <div class="column">
+                                    <img src="images/pp_parcel2.png" alt="" style="width:100%"/>
+                                </div>
+                            </div>
+
+                            <p style="text-align:left"> With the Monmouth County parcel dataset, I also explored the density of detached homes using Kernel density, shown on the left. 
+                                The map on the right shows each property assessed in 2016 at over $1 million as a green point, and each property assessed in 2016 
+                                at less than $300,000 as a red point. Municipalities are labeled using the point of each municipality's polygon centroid, without the point shown. 
+                                As you can see, there is little overlap of green and red points in the same municipality, especially towards the shore. </p>
+
+                        </div>
+					</section>
+
+                <!-- Links -->
+                <section id="more" class="two">
+                    <div class="container">
+
+                        <header>
+                            <h2>Explore more:</h2>
+                        </header>
+
+                        <div class="row">
+                            <div class="col-4 col-4-mobile">
+                                <article class="item">
+                                    <a href="index.html" class="image fit"><img src="images/av_home.jpg" alt="" /></a>
+                                    <header>
+                                        <h3>Home</h3>
+                                    </header>
+                                </article>
+                            </div>
+                            <div class="col-4 col-4-mobile">
+                                <article class="item">
+                                    <a href="workportfolio.html" class="image fit"><img src="images/av_work.jpg" alt="" /></a>
+                                    <header>
+                                        <h3>Work project portfolio</h3>
+                                    </header>
+                                </article>
+                            </div>
+                            <div class="col-4 col-4-mobile">
+                                <article class="item">
+                                    <a href="schoolportfolio.html" class="image fit"><img src="images/av_school.jpg" alt="" /></a>
+                                    <header>
+                                        <h3>School project portfolio</h3>
+                                    </header>
+                                </article>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>               
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->			
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
